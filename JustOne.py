@@ -1,57 +1,59 @@
 
 
-print("Hallo! Willkommen bei JustOne! Möchten Sie erst die Regeln erfahren? (ja/nein)")
+print("Hello! Welcome to JustOne! Would you like to know the rules first? (Yes/No)")
 response = input('>')
-if response.lower() == 'ja':
-    print ('"REGELN"')
+if response.lower() == 'yes':
+    print ('"RULES"') 
     print ('_ _ _ _ _ _ _ _ _ _ _ _ _')
-    print ('Bitte geben Sie die Anzahl der Spieler ein:')
+    print ('Please enter the number of players: ')
 else:
-    print ("Bitte geben Sie die Anzahl der Spieler ein:")
+    print ("Please enter the number of players: ") # (Demo: 3 Players , Full Game: up to 7 Players)
 Number_Of_Players = int(input('>'))
-Wörter = ["Apfel", "Hund", "Eis", "Zimmer", "Club"]
-print ("Spieler 1: Wählen Sie ein Wort von 1 bis 5 und drehen Sie sich bitte um:)")
+Words = ["Apple", "Dog", "Ice", "Room", "Club"] # Karte zeigen
+print ("Player 1: Choose a word between 1 and 5 and please turn around :)")
 response = input('>')
-print ("Das gewählte Word ist:")
+print ("The Mystery word is: ")
 
 while True:
     if response == "1":
-        print (Wörter[0])
+        print (Words[0])
         break
     elif response == "2":
-        print (Wörter[1])
+        print (Words[1])
         break
     elif response == "3":
-        print (Wörter[2])
+        print (Words[2])
         break
     elif response == "4":
-        print (Wörter[3])
+        print (Words[3])
         break
     elif response == "5":
-        print (Wörter[4])
+        print (Words[4])
         break
     else:
-        print("Bitte geben Sie eine Zahl von 1 bis 5 ein") #verwenden einen Loop
+        print("Please enter a number between 1 and 5") #use a loop to make the aktive players enter a number again
         break
     
-print ("Spieler 3: Augen zu :)")
-print ("Spieler 2: Geben Sie zwei hinweise Wörter ein:")
-response = s1_h1 = input('>')
-response = s1_h2 = input('>')
-print ("Spieler 2: Augen zu :)")
-print ("Spieler 3: Geben Sie zwei hinweise Wörter ein:")
-response = s2_h1 = input('>')
-response = s2_h2 = input('>')
+print ("Player 3: Eyes closed :)")
+print ("Player 2: ُEnter two clue Words:")
+response = p1_c1 = input('>') # Hints cover up
+response = p1_c2 = input('>') # Hints cover up
+print ("Plazer 2: Eyes closed :)")
+print ("Plazer 3: Enter two clue Words")
+response = p2_c1 = input('>') # Hints cover up
+response = p2_c2 = input('>') # Hints cover up
 
-print ("Die Hinweise werden überprüft...")
+# print ("The clue words are checked...")
 
-# eine Idea zur Überprüfung der Hinweise (ist aber immer noch an der Bearbeitung)
-"""Hinweise = [s1_h1, s1_h2, s2_h1, s2_h2] 
-for x in Hinweise:
-    if s1_h1.lower() == s2_h1.lower():
-        Hinweise.pop(0)
-        Hinweise.pop(1)
-        print (s1_h2,s2_h2)
-        print (Hinweise)
-        print ('__________')
-        print (x)"""
+# a mrthod how to chekck clue words:
+Clue_Words = [p1_c1, p1_c2, p2_c1, p2_c2] 
+for x in Clue_Words:
+    if p1_c1.lower() == p2_c1.lower():
+        Clue_Words.pop(0)
+        # Hinweise.pop(1)
+        print (p1_c2)
+        print (p2_c2)
+        break
+        # print (Hinweise)
+        # print ('__________')
+        # print (x)
