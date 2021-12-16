@@ -98,7 +98,7 @@ while True:
     break
     
 Score = 0
-Cards = 1
+Cards = 13
 print ("Player 1: try to guess the Mystry Word: ")
 guess = input(">")
 print (guess)
