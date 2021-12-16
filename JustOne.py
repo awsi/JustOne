@@ -1,4 +1,5 @@
 import os
+import sys
 
 #https://www.delftstack.com/de/howto/python/python-clear-console/
 def clearConsole():
@@ -9,9 +10,9 @@ def playagain():
     print ("Play again? (yes/no)")            
     response = input('>')
     if response.lower() == "yes":
-        print ("") # restart the game
+        print ("New Round: Loading...") # New Round..
     else:
-        print ("")
+        print ("") 
 
 print("Hello! Welcome to JustOne! Would you like to know the rules first? (yes/no)")
 response = input('>')
@@ -20,7 +21,7 @@ if response.lower() == "yes":
     print ('_ _ _ _ _ _ _ _ _ _ _ _ _')
     print ('Please enter the number of players: (ONLY THREE PLAYERS) ')
 else:
-    print ("Please enter the number of players: (ONLY THREE PLAYERS)") # (Demo: 3 Players , Full Game: up to 7 Players)
+    print ("Please enter the number of players: (ONLY THREE PLAYERS) ") # (Demo: 3 Players , Full Game: up to 7 Players)
 
 Number_Of_Players = input('>')
 clearConsole()
@@ -28,8 +29,8 @@ while True:
     if Number_Of_Players == "3":
         break
     else:
-        print (":( Please restart the Game and enter number 3" )
         clearConsole()
+        sys.exit(":( Please restart the Game and enter number 3")
         
         
 
@@ -62,8 +63,8 @@ while True:
         print (card1[4])
         break
     else:
-        print(":( . Please restart the Game and enter a number between 1 and 5 to choose the Mystry Word") #use a loop to make the aktive players enter a number again
         clearConsole()
+        sys.exit(":( Please restart the Game and enter a number between 1 and 5 to choose the Mystry Word") #use a loop to make the aktive players enter a number again
         
 
     
