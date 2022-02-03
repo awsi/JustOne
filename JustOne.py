@@ -62,7 +62,7 @@ while playagain == "yes":
     cards = ['WATER', 'FISH', 'BIRD', 'CAR', 'CHAIR', 'MUG', 'CHEESE', 'CAMERA', 'CAKE', 'CLOCK', 'FIRE', 'EARTH', 'GARDEN', 'BOAT', 'MOON', 'MOUTH', 'APPLE', 'GUITAR', 'AIR', 'PHONE', 'SKY', 'HORSE', 'BOOK', 'MUSIC', 'RAIN', 'ANIMAL', 'CAPTAIN', 'FROG', 'MONKEY', 'SHIELD', 'BAG', 'KING', 'GAME', 'SNOW', 'BEE', 'SCHOOL', 'LOVE', 'DOLLAR', 'DOCTOR', 'INSECT', 'POISON', 'GOLD', 'PAIN', 'CONTINENT', 'RADIO', 'PHONE', 'METAL', 'DESK', 'SCIENCE', 'GUN', 'SPACE', 'FILM', 'LANGUAGE', 'BED', 'COFFEE', 'EYE', 'WINE', 'WOOD', 'BRIDGE', 'BALL', 'SQUIRREL', 'PAPER', 'CHOCOLATE', 'DOOR', 'SUN', 'WEEK', 'PARTY', 'MOTHER', 'SUGAR', 'SALT', 'NOSE', 'RELIGION', 'DESERT']
     
     Score = 0
-    Cards = 2
+    Cards = 13
     Rounds = 0
     while Cards > 0:
         Rounds += 1
