@@ -125,7 +125,7 @@ while playagain == "yes":
 
         LemaAndSima = []
         for w, value in similarity:
-            if value > 0.4:
+            if 0.9 > value > 0.4:
                 LemaAndSima.append(w)
                 #print(f"{Mystry} - {w}", value)
      
