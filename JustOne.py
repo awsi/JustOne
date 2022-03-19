@@ -143,7 +143,7 @@ while playagain == "yes":
         print ("similarity (all values):" , similarity)
         print("-----------------")
         print("Number of Words:", len(LemaAndSima))
-        print ("LemaAndSima(value > 0.4):" , LemaAndSima)
+        print ("LemaAndSima ( 0.9 > value > 0.4 ):" , LemaAndSima)
         print("-----------------")
         print("CPU clues:", conceptnet_clues)
         print("-----------------")
