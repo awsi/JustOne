@@ -35,7 +35,7 @@ pip install tabulate
 ```
 
 ```sh
-pip3 install colorama
+pip install colorama
 ```
 
 ## License
