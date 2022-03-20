@@ -1,9 +1,7 @@
 
 import os
-from click import style
 import requests
 import random
-import colorama
 from colorama import Fore, Back, Style, init
 init(autoreset=True)
 import warnings
